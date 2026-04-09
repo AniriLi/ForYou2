@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — Мода</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="goToPage('index.html')" style="cursor: pointer;">For You</div>
+        <nav class="nav">
+            <a href="#" onclick="goToPage('index.html')">Главная</a>
+            <a href="#" onclick="goToPage('fashion.html')">Мода</a>
+            <a href="#" onclick="goToPage('beauty.html')">Красота</a>
+            <a href="#" onclick="goToPage('lifestyle.html')">Лайфстайл</a>
+            <a href="#" onclick="goToPage('travel.html')">Путешествия</a>
+            <a href="#" onclick="goToPage('interview.html')">Интервью</a>
+            <a href="#" onclick="goToPage('art.html')">Арт</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1 class="page-title">Мода</h1>
+        <p class="page-description">Главные тренды, показы и вдохновение</p>
+    </section>
+
+    <div class="articles-list">
+        <div class="full-article">
+            <img src="img/13.jpg" alt="fashion" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Мода</span>
+                <h2>5 вещей, которые нас вдохновили этой весной</h2>
+                <p class="article-text">От смелых цветовых решений до минималистичных силуэтов — собрали главные тренды сезона. Узнайте, какие вещи стоит добавить в гардероб прямо сейчас.</p>
+                <p class="article-text">В этом сезоне дизайнеры предлагают нам экспериментировать с формами и текстурами. Натуральные ткани, экологичные материалы и винтажные элементы становятся основой модного образа.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="full-article">
+            <img src="img/2026-03-28_16-22-54.png" alt="fashion" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Мода</span>
+                <h2>Модели и всё о них: закулисье</h2>
+                <p class="article-text">Как живут топ-модели за пределами подиума? Рассказываем о буднях профессионалов модной индустрии.</p>
+                <p class="article-text">За блеском подиума скрывается огромный труд. Узнайте, как модели готовятся к показам, чем питаются и как сохраняют здоровье в условиях постоянных нагрузок.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 For You — цифровой журнал</p>
+        <p><a href="#" onclick="goToPage('about.html')">Команда</a> · <a href="#" onclick="goToPage('ads.html')">Рекламодателям</a> · <a href="#" onclick="showSubscribe()">Подписка</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — Красота</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="goToPage('index.html')" style="cursor: pointer;">For You</div>
+        <nav class="nav">
+            <a href="#" onclick="goToPage('index.html')">Главная</a>
+            <a href="#" onclick="goToPage('fashion.html')">Мода</a>
+            <a href="#" onclick="goToPage('beauty.html')">Красота</a>
+            <a href="#" onclick="goToPage('lifestyle.html')">Лайфстайл</a>
+            <a href="#" onclick="goToPage('travel.html')">Путешествия</a>
+            <a href="#" onclick="goToPage('interview.html')">Интервью</a>
+            <a href="#" onclick="goToPage('art.html')">Арт</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1 class="page-title">Красота</h1>
+        <p class="page-description">Уход, макияж и здоровье</p>
+    </section>
+
+    <div class="articles-list">
+        <div class="full-article">
+            <img src="img/загруженное (13).jpg" alt="beauty" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Красота</span>
+                <h2>Таро: как карты помогают в самопознании</h2>
+                <p class="article-text">Таро — это не просто гадание, а инструмент для рефлексии и поиска ответов внутри себя. Рассказываем, как начать свой путь.</p>
+                <p class="article-text">Многие психологи используют карты Таро в своей практике. Это помогает клиентам лучше понять свои желания и страхи. Узнайте, с чего начать знакомство с этой древней системой.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="full-article">
+            <img src="https://placehold.co/800x500/6F9FB3/white?text=Skincare+Routine" alt="skincare" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Красота</span>
+                <h2>10 шагов к идеальной коже</h2>
+                <p class="article-text">Корейский уход за кожей: разбираем все этапы и выбираем лучшие продукты для разных типов кожи.</p>
+                <p class="article-text">Правильный уход — залог здоровой и сияющей кожи. Рассказываем о базовых этапах: очищение, тонизирование, увлажнение и защита от солнца.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 For You — цифровой журнал</p>
+        <p><a href="#" onclick="goToPage('about.html')">Команда</a> · <a href="#" onclick="goToPage('ads.html')">Рекламодателям</a> · <a href="#" onclick="showSubscribe()">Подписка</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

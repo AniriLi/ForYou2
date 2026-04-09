@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — Лайфстайл</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="goToPage('index.html')" style="cursor: pointer;">For You</div>
+        <nav class="nav">
+            <a href="#" onclick="goToPage('index.html')">Главная</a>
+            <a href="#" onclick="goToPage('fashion.html')">Мода</a>
+            <a href="#" onclick="goToPage('beauty.html')">Красота</a>
+            <a href="#" onclick="goToPage('lifestyle.html')">Лайфстайл</a>
+            <a href="#" onclick="goToPage('travel.html')">Путешествия</a>
+            <a href="#" onclick="goToPage('interview.html')">Интервью</a>
+            <a href="#" onclick="goToPage('art.html')">Арт</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1 class="page-title">Лайфстайл</h1>
+        <p class="page-description">Вдохновение для повседневной жизни</p>
+    </section>
+
+    <div class="articles-list">
+        <div class="full-article">
+            <img src="img/загруженное (14).jpg" alt="baking" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Лайфстайл</span>
+                <h2>Простая выпечка для начинающих</h2>
+                <p class="article-text">Рецепты, которые точно получатся с первого раза. Печём вместе с For You!</p>
+                <p class="article-text">Шарлотка, печенье, кексы — базовые рецепты, которые станут основой вашего кулинарного мастерства. Пошаговые инструкции и секреты от шеф-поваров.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="full-article">
+            <img src="img/загруженноеdfg.jpg" alt="travel" class="article-big-img">
+            <div class="article-content">
+                    <span class="category">Лайфстайл</span>
+                    <h3>Таро, как способ выразиться</h3>
+                    <span class="author">Мария Вешнякова</span>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 For You — цифровой журнал</p>
+        <p><a href="#" onclick="goToPage('about.html')">Команда</a> · <a href="#" onclick="goToPage('ads.html')">Рекламодателям</a> · <a href="#" onclick="showSubscribe()">Подписка</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

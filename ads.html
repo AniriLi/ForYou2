@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — Рекламодателям</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="goToPage('index.html')" style="cursor: pointer;">For You</div>
+        <nav class="nav">
+            <a href="#" onclick="goToPage('index.html')">Главная</a>
+            <a href="#" onclick="goToPage('fashion.html')">Мода</a>
+            <a href="#" onclick="goToPage('beauty.html')">Красота</a>
+            <a href="#" onclick="goToPage('lifestyle.html')">Лайфстайл</a>
+            <a href="#" onclick="goToPage('travel.html')">Путешествия</a>
+            <a href="#" onclick="goToPage('interview.html')">Интервью</a>
+            <a href="#" onclick="goToPage('art.html')">Арт</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1 class="page-title">Рекламодателям</h1>
+        <p class="page-description">Сотрудничество с For You</p>
+    </section>
+
+    <div class="ads-content">
+        <div class="info-card">
+            <h2>Почему выбирают нас?</h2>
+            <ul>
+                <li>🎯 Целевая аудитория 18–30 лет</li>
+                <li>📈 Высокий уровень вовлеченности</li>
+                <li>🎨 Премиальный визуальный стиль</li>
+                <li>📱 Адаптация под все устройства</li>
+                <li>🤝 Индивидуальный подход</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h2>Форматы сотрудничества</h2>
+            <ul>
+                <li>📝 Нативные интеграции в статьи</li>
+                <li>🖼️ Баннерная реклама</li>
+                <li>📧 Email-рассылки</li>
+                <li>🎯 Специальные проекты и коллаборации</li>
+                <li>📱 Продвижение в соцсетях</li>
+            </ul>
+        </div>
+
+        <div class="contact-form">
+            <h2>Свяжитесь с нами</h2>
+            <input type="text" id="contact-name" placeholder="Ваше имя">
+            <input type="email" id="contact-email" placeholder="Ваш email">
+            <textarea id="contact-message" rows="4" placeholder="Сообщение"></textarea>
+            <button onclick="sendContact()">Отправить заявку</button>
+            <p id="contact-message-result"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 For You — цифровой журнал</p>
+        <p><a href="#" onclick="goToPage('about.html')">Команда</a> · <a href="#" onclick="goToPage('ads.html')">Рекламодателям</a> · <a href="#" onclick="showSubscribe()">Подписка</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

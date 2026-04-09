@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — О журнале</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="goToPage('index.html')" style="cursor: pointer;">For You</div>
+        <nav class="nav">
+            <a href="#" onclick="goToPage('index.html')">Главная</a>
+            <a href="#" onclick="goToPage('fashion.html')">Мода</a>
+            <a href="#" onclick="goToPage('beauty.html')">Красота</a>
+            <a href="#" onclick="goToPage('lifestyle.html')">Лайфстайл</a>
+            <a href="#" onclick="goToPage('travel.html')">Путешествия</a>
+            <a href="#" onclick="goToPage('interview.html')">Интервью</a>
+            <a href="#" onclick="goToPage('art.html')">Арт</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1 class="page-title">О журнале</h1>
+        <p class="page-description">Кто мы и зачем создали For You</p>
+    </section>
+
+    <div class="about-content">
+        <div class="mission-block">
+            <h2>Наша миссия</h2>
+            <p>For You — это развлекательный онлайн-журнал нового поколения. Мы превращаем каждую статью в визуально насыщенный лонгрид с акцентом на эстетику, атмосферу и вовлечение читателя.</p>
+        </div>
+
+        <div class="team-grid" id="team-grid">
+            <h2>Наша команда</h2>
+            <div class="team-members">
+                <div class="team-card">
+                    <div class="team-img">👩‍💼</div>
+                    <h3>Ирина Шишкина</h3>
+                    <p>Главный редактор</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">👨‍💻</div>
+                    <h3>Анири Аникшиш</h3>
+                    <p>Шеф-редактор</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">🎨</div>
+                    <h3>Сергей Мельняков</h3>
+                    <p>Арт-директор</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-img">📸</div>
+                    <h3>Валерия Широкова</h3>
+                    <p>Фотограф</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe-block">
+            <h2>Подпишитесь на рассылку</h2>
+            <p>Будьте в курсе новых материалов и специальных проектов</p>
+            <div class="subscribe-form">
+                <input type="email" id="subs-email" placeholder="Ваш email">
+                <button onclick="subscribeEmail()">Подписаться</button>
+            </div>
+            <p id="subs-message" class="subs-message"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 For You — цифровой журнал</p>
+        <p><a href="#" onclick="goToPage('about.html')">Команда</a> · <a href="#" onclick="goToPage('ads.html')">Рекламодателям</a> · <a href="#" onclick="showSubscribe()">Подписка</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

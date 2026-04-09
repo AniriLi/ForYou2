@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — Арт</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="goToPage('index.html')" style="cursor: pointer;">For You</div>
+        <nav class="nav">
+            <a href="#" onclick="goToPage('index.html')">Главная</a>
+            <a href="#" onclick="goToPage('fashion.html')">Мода</a>
+            <a href="#" onclick="goToPage('beauty.html')">Красота</a>
+            <a href="#" onclick="goToPage('lifestyle.html')">Лайфстайл</a>
+            <a href="#" onclick="goToPage('travel.html')">Путешествия</a>
+            <a href="#" onclick="goToPage('interview.html')">Интервью</a>
+            <a href="#" onclick="goToPage('art.html')">Арт</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1 class="page-title">Арт</h1>
+        <p class="page-description">Искусство во всех проявлениях</p>
+    </section>
+
+    <div class="articles-list">
+        <div class="full-article">
+            <img src="img/загруженное (13).jpg" alt="art" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Арт</span>
+                <h2>Выставка недели: свет в керамике</h2>
+                <p class="article-text">Новая выставка современной керамики покоряет сердца посетителей. Художники экспериментируют с формой, светом и текстурой.</p>
+                <p class="article-text">Керамика перестала быть просто ремеслом — это полноценное искусство. На выставке представлены работы как признанных мастеров, так и молодых талантов.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="full-article">
+            <img src="https://placehold.co/800x500/CBEEF3/1E1E1E?text=Стрит-арт" alt="streetart" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Арт</span>
+                <h2>Стрит-арт: искусство на улицах города</h2>
+                <p class="article-text">Граффити, муралы и инсталляции — как уличное искусство меняет облик современных городов.</p>
+                <p class="article-text">Рассказываем о самых ярких проектах последних лет и о том, почему стрит-арт стал неотъемлемой частью городской культуры.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="full-article">
+            <img src="https://placehold.co/800x500/6F9FB3/white?text=Цифровое+искусство" alt="digitalart" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Арт</span>
+                <h2>Цифровое искусство: новые горизонты</h2>
+                <p class="article-text">NFT, 3D-графика и AI-арт — как технологии меняют представление о творчестве.</p>
+                <p class="article-text">Мы поговорили с digital-художниками о том, каково создавать искусство в эпоху нейросетей и что ждёт нас в будущем.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 For You — цифровой журнал</p>
+        <p><a href="#" onclick="goToPage('about.html')">Команда</a> · <a href="#" onclick="goToPage('ads.html')">Рекламодателям</a> · <a href="#" onclick="showSubscribe()">Подписка</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

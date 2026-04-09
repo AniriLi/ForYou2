@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — Интервью</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="goToPage('index.html')" style="cursor: pointer;">For You</div>
+        <nav class="nav">
+            <a href="#" onclick="goToPage('index.html')">Главная</a>
+            <a href="#" onclick="goToPage('fashion.html')">Мода</a>
+            <a href="#" onclick="goToPage('beauty.html')">Красота</a>
+            <a href="#" onclick="goToPage('lifestyle.html')">Лайфстайл</a>
+            <a href="#" onclick="goToPage('travel.html')">Путешествия</a>
+            <a href="#" onclick="goToPage('interview.html')">Интервью</a>
+            <a href="#" onclick="goToPage('art.html')">Арт</a>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1 class="page-title">Интервью</h1>
+        <p class="page-description">Разговоры с интересными людьми</p>
+    </section>
+
+    <div class="articles-list">
+        <div class="full-article">
+            <img src="img/Подкасты с интервью эстетика.jpg" alt="interview" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Интервью</span>
+                <h2>«Тишина — это новая роскошь» — разговор с дизайнером</h2>
+                <p class="article-text">Мы поговорили с известным дизайнером о минимализме, вдохновении и том, как найти гармонию в современном мире.</p>
+                <p class="article-text">Она рассказала о своём творческом пути, о том, как пандемия изменила взгляды на дизайн, и почему натуральные материалы и тишина становятся главным трендом.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="full-article">
+            <img src="https://placehold.co/800x500/BF321C/white?text=Фотограф" alt="photographer" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Интервью</span>
+                <h2>Фотограф Анна Минакова: «Ищите свой свет»</h2>
+                <p class="article-text">Анна рассказала о своём пути в фотографию, о любимых камерах и о том, как найти уникальный стиль.</p>
+                <p class="article-text">«Фотография — это умение видеть свет. Техника вторична, главное — ваше восприятие мира», — делится секретами Анна.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="full-article">
+            <img src="https://placehold.co/800x500/6F9FB3/white?text=Художник" alt="artist" class="article-big-img">
+            <div class="article-content">
+                <span class="category">Интервью</span>
+                <h2>Художник о творчестве и блоке</h2>
+                <p class="article-text">Как справляться с творческим кризисом и находить вдохновение каждый день? Откровенный разговор с современным художником.</p>
+                <p class="article-text">Гость рассказал о своих ритуалах, о том, как важна дисциплина в искусстве, и почему иногда нужно просто остановиться.</p>
+                <button class="like-btn" onclick="likeArticle(this)">❤️ Нравится <span class="like-count">0</span></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 For You — цифровой журнал</p>
+        <p><a href="#" onclick="goToPage('about.html')">Команда</a> · <a href="#" onclick="goToPage('ads.html')">Рекламодателям</a> · <a href="#" onclick="showSubscribe()">Подписка</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You — журнал</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@300;400&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="he.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo" onclick="goToPage('index.html')" style="cursor: pointer;">For You</div>
+<nav class="nav">
+    <a href="#" onclick="goToPage('index.html')">Главная</a>
+    <a href="#" onclick="goToPage('fashion.html')">Мода</a>
+    <a href="#" onclick="goToPage('beauty.html')">Красота</a>
+    <a href="#" onclick="goToPage('lifestyle.html')">Лайфстайл</a>
+    <a href="#" onclick="goToPage('travel.html')">Путешествия</a>
+    <a href="#" onclick="goToPage('interview.html')">Интервью</a>
+    <a href="#" onclick="goToPage('art.html')">Арт</a>
+</nav>>
+    </header>
+
+    <section class="cover">
+        <div class="cover-block">
+            <p class="issue">Выпуск №13 / Весна 2026</p>
+            <h1 class="title">Тишина и ритм</h1>
+            <p class="lead">Главный материал: Как минимализм меняет глянец</p>
+            <div class="tags">
+                <span>#вдохновение</span>
+                <span>#выбор_редакции</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="rubrics">
+        <span class="rubric-item active" onclick="filterArticles('all')">Всё</span>
+        <span class="rubric-item" onclick="filterArticles('fashion')">Мода</span>
+        <span class="rubric-item" onclick="filterArticles('beauty')">Красота</span>
+        <span class="rubric-item" onclick="filterArticles('lifestyle')">Лайфстайл</span>
+        <span class="rubric-item" onclick="filterArticles('interview')">Интервью</span>
+        <span class="rubric-item" onclick="filterArticles('art')">Арт</span>
+        <span class="rubric-item" onclick="filterArticles('travel')">Путешествия</span>
+    </div>
+
+    <section class="trending">
+        <h2>Сейчас читают</h2>
+        <div class="cards" id="trending-cards">
+            <div class="card" data-category="interview">
+                <div class="card-img">
+                    <img src="img/Подкасты с интервью эстетика.jpg" alt="img">
+                </div>
+                <div class="card-text">
+                    <span class="category">Интервью</span>
+                    <h3>«Тишина — это новая роскошь»</h3>
+                    <span class="author">Анна Каренина</span>
+                    <button class="read-more" onclick="openArticle('interview1')">Читать →</button>
+                </div>
+            </div>
+            <div class="card" data-category="travel">
+                <div class="card-img">
+                    <img src="img/img_7635.jpg" alt="img">
+                </div>
+                <div class="card-text">
+                    <span class="category">Путешествия</span>
+                    <h3>Гид по Копенгагену</h3>
+                    <span class="author">Петр Иванов</span>
+                    <button class="read-more" onclick="openArticle('travel1')">Читать →</button>
+                </div>
+            </div>
+            <div class="card" data-category="art">
+                <div class="card-img">
+                    <img src="img/загруженное(13).jpg" alt="img">
+                </div>
+                <div class="card-text">
+                    <span class="category">Арт</span>
+                    <h3>Выставка недели: свет</h3>
+                    <span class="author">София Коваль</span>
+                    <button class="read-more" onclick="openArticle('art1')">Читать →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="materials" id="materials-section">
+        <h2>Новые материалы</h2>
+        <div class="materials-grid" id="materials-grid">
+            <div class="material-card" data-category="fashion">
+                <div class="material-img">
+                    <img src="img/13.jpg" alt="img">
+                </div>
+                <div class="material-info">
+                    <span class="category">Мода</span>
+                    <h3>5 вещей, которые нас вдохновили</h3>
+                    <span class="author">Редакция</span>
+                    <button class="read-more small" onclick="openArticle('fashion1')">Читать →</button>
+                </div>
+            </div>
+            <div class="material-card" data-category="beauty">
+                <div class="material-img">
+                    <img src="img/загруженноеdfg.jpg" alt="img">
+                </div>
+                    <div class="material-info">
+                    <span class="category">Лайфстайл</span>
+                    <h3>Таро, как способ выразиться</h3>
+                    <span class="author">Мария Вешнякова</span>
+                    <button class="read-more small" onclick="openArticle('lifestyle1')">Читать →</button>
+            </div>
+            </div>
+            <div class="material-card" data-category="lifestyle">
+                <div class="material-img">
+                    <img src="img/загруженное (14).jpg" alt="img">
+                </div>
+                <div class="material-info">
+                    <span class="category">Лайфстайл</span>
+                    <h3>Простая Выпечка</h3>
+                    <span class="author">Дмитрий Соколов</span>
+                    <button class="read-more small" onclick="openArticle('lifestyle2')">Читать →</button>
+                </div>
+            </div>
+            <div class="material-card" data-category="fashion">
+                <div class="material-img">
+                    <img src="img/2026-03-28_16-22-54.png" alt="img">
+                </div>
+                <div class="material-info">
+                    <span class="category">Мода</span>
+                    <h3>Модели и всё о них</h3>
+                    <span class="author">Чарли Викенд</span>
+                    <button class="read-more small" onclick="openArticle('fashion2')">Читать →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 For You — цифровой журнал</p>
+        <p>
+            <a href="#" onclick="goToPage('about.html')">Команда</a> · 
+            <a href="#" onclick="goToPage('ads.html')">Рекламодателям</a> · 
+            <a href="#" onclick="showSubscribe()">Подписка</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
