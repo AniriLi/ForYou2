@@ -43,19 +43,6 @@ function filterArticles(category) {
             }
         }
     });
-    
-    if (category !== 'all') {
-        let categoryName = '';
-        switch(category) {
-            case 'fashion': categoryName = 'Мода'; break;
-            case 'beauty': categoryName = 'Красота'; break;
-            case 'lifestyle': categoryName = 'Лайфстайл'; break;
-            case 'interview': categoryName = 'Интервью'; break;
-            case 'art': categoryName = 'Арт'; break;
-            case 'travel': categoryName = 'Путешествия'; break;
-        }
-        console.log('Показаны материалы рубрики: ' + categoryName);
-    }
 }
 
 function likeArticle(button) {
@@ -99,6 +86,7 @@ function showSubscribe() {
 function subscribeEmail() {
     const emailInput = document.getElementById('subs-email');
     const messageSpan = document.getElementById('subs-message');
+    if (!emailInput) return;
     const email = emailInput.value;
     
     if (email && email.includes('@') && email.includes('.')) {
@@ -119,18 +107,20 @@ function subscribeEmail() {
 }
 
 function sendContact() {
-    const name = document.getElementById('contact-name')?.value;
-    const email = document.getElementById('contact-email')?.value;
-    const message = document.getElementById('contact-message')?.value;
+    const name = document.getElementById('contact-name');
+    const email = document.getElementById('contact-email');
+    const message = document.getElementById('contact-message');
     const resultSpan = document.getElementById('contact-message-result');
     
-    if (name && email && message) {
-        if (email.includes('@') && email.includes('.')) {
+    if (!name || !email || !message || !resultSpan) return;
+    
+    if (name.value && email.value && message.value) {
+        if (email.value.includes('@') && email.value.includes('.')) {
             resultSpan.style.color = '#4CAF50';
             resultSpan.innerText = '✅ Спасибо! Мы свяжемся с вами в ближайшее время.';
-            if(document.getElementById('contact-name')) document.getElementById('contact-name').value = '';
-            if(document.getElementById('contact-email')) document.getElementById('contact-email').value = '';
-            if(document.getElementById('contact-message')) document.getElementById('contact-message').value = '';
+            name.value = '';
+            email.value = '';
+            message.value = '';
             setTimeout(() => {
                 resultSpan.innerText = '';
             }, 4000);
@@ -145,11 +135,6 @@ function sendContact() {
 }
 
 window.onload = function() {
-    const savedEmail = localStorage.getItem('subscriberEmail');
-    if (savedEmail) {
-        console.log('Добро пожаловать, подписчик!');
-    }
-    
     document.body.style.opacity = '0';
     document.body.style.transition = 'opacity 0.5s';
     setTimeout(() => {
